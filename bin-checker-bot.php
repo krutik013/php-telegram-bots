@@ -12,7 +12,11 @@
 
     //Start message
     if($message == "/start"){
-        send_message($chat_id, "Hey $firstname \nUse /bin xxxxxx To check Bins \nBot by @reboot13");
+        send_message($chat_id, "Hey $firstname 
+
+Use /bin xxxxxx To check Bins 
+
+Bot by @reboot13");
     }
 
 
@@ -53,14 +57,21 @@ $Brand = $data['brand'];
 $type = $data['type'];
   if ($scheme != null) {
         send_message($chat_id, "
-\nBin: $bin
-\nType: $scheme
-\nBrand : $Brand
-\nBank: $bank
-\nCountry: $country $emoji
-\nCurrency: $currency
-\nCredit/Debit:$type
-\nChecked By @$username");
+Bin: $bin
+
+Type: $scheme
+
+Brand : $Brand
+
+Bank: $bank
+
+Country: $country $emoji
+
+Currency: $currency
+
+Credit/Debit:$type
+
+Checked By @$username");
     }
 else {
     send_message($chat_id, "Enter Valid BIN");
