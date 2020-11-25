@@ -12,9 +12,7 @@
 
     //Start message
     if($message == "/start"){
-        send_MDmessage($chat_id, "Hey $firstname  
-         \nUse /bin xxxxxx To check Bins  
-         \nBot by @reboot13 ");
+        send_message($chat_id, "Hey $firstname \nUse /bin xxxxxx To check Bins \nBot by @reboot13");
     }
 
 
@@ -54,7 +52,7 @@ $scheme = $data['scheme'];
 $Brand = $data['brand'];
 $type = $data['type'];
   if ($scheme != null) {
-        send_MDmessage($chat_id, " **
+        send_message($chat_id, " **
     Bin: $bin
 Type: $scheme
 Brand : $Brand
@@ -65,7 +63,7 @@ Credit/Debit:$type
 Checked By @$username ** ");
     }
 else {
-    send_MDmessage($chat_id, "Enter Valid BIN");
+    send_message($chat_id, "Enter Valid BIN");
 }
    }
     
@@ -77,9 +75,9 @@ else {
 
     
 //Send Messages with Markdown (Global)
-      function send_MDmessage($chat_id, $message){
+      function send_message($chat_id, $message){
         $text = urlencode($message);
-        file_get_contents("https://api.telegram.org/bot1455488311:AAFQhQ5VYUl7akC5vCagg2WY6cxx2z8-8Oo/sendMessage?chat_id=$chat_id&text=$message&parse_mode=Markdown");
+        file_get_contents("https://api.telegram.org/bot1455488311:AAFQhQ5VYUl7akC5vCagg2WY6cxx2z8-8Oo/sendMessage?chat_id=$chat_id&text=$message");
     }
     
 ?>
