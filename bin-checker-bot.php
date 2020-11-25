@@ -12,7 +12,7 @@
 
     //Start message
     if($message == "/start"){
-        send_message($chat_id, "Hey $firstname  \nUse /bin xxxxxx To check Bins  \nBot by @reboot13 ");
+        send_MDmessage($chat_id, "Hey $firstname  \nUse /bin xxxxxx To check Bins  \nBot by @reboot13 ");
     }
 
 
