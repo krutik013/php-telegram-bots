@@ -52,15 +52,15 @@ $scheme = $data['scheme'];
 $Brand = $data['brand'];
 $type = $data['type'];
   if ($scheme != null) {
-        send_message($chat_id, " **
-    Bin: $bin
-Type: $scheme
-Brand : $Brand
-Bank: $bank
-Country: $country $emoji
-Currency: $currency
-Credit/Debit:$type
-Checked By @$username ** ");
+        send_message($chat_id, "
+\nBin: $bin
+\nType: $scheme
+\nBrand : $Brand
+\nBank: $bank
+\nCountry: $country $emoji
+\nCurrency: $currency
+\nCredit/Debit:$type
+\nChecked By @$username");
     }
 else {
     send_message($chat_id, "Enter Valid BIN");
