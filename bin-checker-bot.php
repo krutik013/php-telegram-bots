@@ -88,7 +88,7 @@ else {
 //Send Messages with Markdown (Global)
       function send_message($chat_id, $message){
         $text = urlencode($message);
-        file_get_contents("https://api.telegram.org/bot1455488311:AAFQhQ5VYUl7akC5vCagg2WY6cxx2z8-8Oo/sendMessage?chat_id=$chat_id&text=$message");
+        file_get_contents("https://api.telegram.org/bot1455488311:AAFQhQ5VYUl7akC5vCagg2WY6cxx2z8-8Oo/sendMessage?chat_id=$chat_id&text=$text");
     }
     
 ?>
